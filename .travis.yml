@@ -10,6 +10,7 @@ script:
 
 deploy:
   provide: elasticbeanstalk
+  skip_cleanup: true
   region: "us-east-2"
   app: "webapp"
   env: "Webapp-env"
@@ -17,7 +18,7 @@ deploy:
   bucket_path: "webapp"
   on:
     branch: master
-  access_key_id: $AWS_ACCESS_KEY
-  secret_access_key: $AWS_SECRET_KEY
+  access_key_id: "$AWS_ACCESS_KEY"
+  secret_access_key: "$AWS_SECRET_KEY"
 
 language: generic
