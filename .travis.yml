@@ -14,7 +14,7 @@ deploy:
   region: "us-east-2"
   app: "webapp"
   env: "Webapp-env"
-  bucker_name: "elasticbeanstalk-us-east-2-246344753294"
+  bucket_name: "elasticbeanstalk-us-east-2-246344753294"
   bucket_path: "webapp"
   on:
     branch: master
